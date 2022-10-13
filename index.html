@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Ping coming soon page</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="#" class="logo"><img src="images/logo.svg" alt="logo" /></a>
+      </header>
+
+      <main class="hero">
+        <div class="top">
+          <h1 class="title">
+            We are launching <span class="bold">soon!</span>
+          </h1>
+          <h2 class="subtitle">Subscribe and get notified</h2>
+        </div>
+
+        <form action="" class="middle">
+          <div class="input-area">
+            <input
+              type="email"
+              class="email"
+              placeholder="Your email address"
+              required
+            />
+            <small class="alert">Please provied a valied email address</small>
+          </div>
+          <button
+            onclick="ValidateEmail()"
+            type="submit"
+            class="btn-getStarted"
+          >
+            Notify Me
+          </button>
+        </form>
+
+        <div class="bottom">
+          <img src="images/illustration-dashboard.png" alt="dashboard" />
+        </div>
+      </main>
+
+      <footer class="footer">
+        <ul class="icon-list">
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook-f social-icon"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter social-icon"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram social-icon"></i></a>
+          </li>
+        </ul>
+        <p class="footer-content">
+          &copy; Copyright Ping. All rights reserved.
+        </p>
+      </footer>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
