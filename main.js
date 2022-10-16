@@ -20,3 +20,20 @@ inputEmail.addEventListener("keydown", () => {
   inputEmail.classList.remove("warning");
   alertText.classList.remove("active");
 });
+
+function AnimationAppear() {
+  const footer = document.querySelector(".footer");
+  const top = document.querySelector(".top");
+  const bottom = document.querySelector(".bottom");
+
+  const elementPosition = footer.getBoundingClientRect().top;
+  const screenPosition = window.innerHeight;
+
+  if (elementPosition < screenPosition) {
+    footer.classList.toggle("footer-appear");
+    top.classList.toggle("top-appear");
+    bottom.classList.toggle("bottom-appear");
+  }
+}
+
+AnimationAppear();

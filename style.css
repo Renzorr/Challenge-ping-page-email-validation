@@ -122,9 +122,18 @@ body {
 
 .header {
   padding-block-end: 1rem;
+  display: flex;
+  justify-content: center;
 }
 
 /* Hero */
+
+.top {
+  width: 100%;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+  transform: translateX(-30rem);
+}
 
 .hero {
   display: flex;
@@ -151,7 +160,6 @@ body {
   font-size: 0.85rem;
   padding-block-end: 2rem;
 }
-
 /* Middle */
 
 .middle {
@@ -232,6 +240,9 @@ body {
 .bottom {
   padding-block: 2rem;
   width: 50%;
+  opacity: 0;
+  transform: translateX(20rem);
+  transition: 1s all ease-in-out;
 }
 
 .bottom img {
@@ -258,9 +269,32 @@ body {
   transition: 0.3s;
 }
 
+.footer {
+  opacity: 0;
+  transform: translateY(3rem);
+  transition: 1s all ease-in-out;
+}
+
 .footer-content {
   font-size: 0.7rem;
   color: var(--Gray);
+}
+
+/* Appear classes */
+
+.top-appear {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.bottom-appear {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.footer-appear {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 /* Hover Effects */
@@ -284,6 +318,9 @@ body {
 /* Media Queries */
 
 @media (max-width: 750px) {
+  .title´ {
+    font-size: 1.2rem;
+  }
   .middle {
     flex-direction: column;
     align-items: center;
